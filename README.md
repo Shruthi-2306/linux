@@ -73,6 +73,20 @@
 ![image](https://github.com/aishwaryaravi19/linux/blob/master/output/cmpe283.2.PNG)
 ![image](https://github.com/aishwaryaravi19/linux/blob/master/output/cmpe283.3.PNG)
 
+# ASSIGNMENT 2
+
+# STEPS FOLLOWED TO COMPLETE
+# PRE REQUISITE
+  Assignment 1 configurations should be set up
+  
+  # STEP 1
+  Add code to KVM at file  /linux/arch/x86/kvm/vmx/vmx.c  and /linux/arch/x86/kvm/cpuid.c
+  
+  * For CPUID leaf node %eax= 0x4FFFFFFF:
+     * Return the total number of exits (all types) in %eax.
+  * For CPUID leaf node %eax= 0x4FFFFFFD:
+     *Return the number of exits for the exit number provided (on input) in %ecx. The output should be returned in %eax.
+
 
 
     

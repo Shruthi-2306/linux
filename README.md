@@ -281,6 +281,46 @@ Modify vmx.c and cpuid.c as per as the requirement.
    
   ![image](https://github.com/aishwaryaravi19/linux/blob/master/output_assignment3/assignment3q2.png)     
 
+# ASSIGNEMENT 4
+
+# WORK DISTRIBUTION
+
+# AISHWARYA RAVI
+   *  Executed assignment 3 code and took the output for  for Nested paging (ept = 1)
+   *	Worked on the documentation.(Colloborated with Shruthi Srinivasan)
+
+
+# SHRUTHI SRINIVASAN
+
+   *	Switched KVM to shadow paging (ept=0)
+   *	Executed assignment 3 code and took the output for  for Shadow Paging (ept = 0).
+   *   Worked on the documentation.(Collaborated with Aishwarya Ravi)
+
+
+# PRE REQUISITES
+ Assignment 1 configuration is to be set up.
+
+# STEPS FOLLOWED TO COMPLETE THE ASSIGNMENT
+
+## STEP 1
+ Open virt-manager and start virtual machine.
+ Execute case 3 to  print all exit type wise counts.
+ 
+### Execute  dmesg for nested paging
+
+## STEP 2
+
+
+ Run the following  commands to switch from nested paging to shadow paging:  
+	
+   * sudo rmmod kvm_intel && sudo rmmod kvm && sudo modprobe kvm && sudo modprobe kvm_intel ept=0
+   * Reboot
+ 
+ ### Execute  dmesg for shadow paging
+
+
+
+
 
 
 
